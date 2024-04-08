@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: Small-Scale-Urban-Service-App-ArgoCD
+  name: small-scale-urban-service-spp-argocd
   namespace: argocd
 spec:
   project: Small-Scale-Urban-Service-App
@@ -11,6 +11,14 @@ spec:
     path: deploy
   destination:
     server: https://kubernetes.default.svc
-    namespace: Small-Scale-Urban-Service-App-argocd
+    namespace: small-scale-urban-service-spp-argocd
+  
+  syncPolicy:
+    syncOptions:
+      - PruneLast=true
+      - CreateNamespace=true
 
+    automated:
+      selfHeal: true
+      prune: true
   
