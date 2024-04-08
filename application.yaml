@@ -1,4 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
+  name: Small-Scale-Urban-Service-App-ArgoCD
+  namespace: argocd
+spec:
+  project: Small-Scale-Urban-Service-App
+  source:
+    repoURL: https://github.com/sid14581/Deployment-Small-scale-Urban-Services.git
+    targetRevision: HEAD
+    path: deploy
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: Small-Scale-Urban-Service-App-argocd
+
   
