@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/sid14581/Deployment-Small-scale-Urban-Services.git
     targetRevision: HEAD
-    path: deploy
+    path: deploy_files
   destination:
     server: https://kubernetes.default.svc
     namespace: small-scale-urban-service-spp-argocd
