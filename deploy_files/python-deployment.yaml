@@ -33,7 +33,7 @@ spec:
       volumes: 
         - name: urban-service-mount
           PersistentVolumeClaim:
-            claimName: meta-pvc
+            claimName: media-pvc
           
         
     
