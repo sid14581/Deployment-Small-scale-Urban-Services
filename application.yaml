@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: small-scale-urban-service-app-argocd
+  name: small-scale-urban-service-argocd
   namespace: argocd
 spec:
   # project: small-scale-urban-Service-App
