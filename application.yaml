@@ -11,7 +11,7 @@ spec:
     path: deploy_files
   destination:
     server: https://kubernetes.default.svc
-    namespace: small-scale-urban-service-spp-argocd
+    namespace: small-scale-urban-service-app-argocd
   
   syncPolicy:
     syncOptions:
