@@ -4,7 +4,8 @@ metadata:
   name: small-scale-urban-service-app-argocd
   namespace: argocd
 spec:
-  project: Small-Scale-Urban-Service-App
+  # project: small-scale-urban-Service-App
+  project: default
   source:
     repoURL: https://github.com/sid14581/Deployment-Small-scale-Urban-Services.git
     targetRevision: HEAD
