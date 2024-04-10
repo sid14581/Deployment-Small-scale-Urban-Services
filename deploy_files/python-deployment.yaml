@@ -24,8 +24,8 @@ spec:
 
           volumeMounts:
             - name: urban-service-mount
-              mountPath: /app/media
-          
+              mountPath: /app/media 
+                        
           command: ['python', 'manage.py', 'migrate']
 
       restartPolicy: OnFailure
@@ -33,7 +33,7 @@ spec:
       volumes: 
         - name: urban-service-mount
           PersistentVolumeClaim:
-            claimName: media-pvc
+            claimName: python-media-pvc
           
         
     
